@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UV Sense - Waitlist Signup & Fund Me</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/waitlist.css" rel="stylesheet" type="text/css" />
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- Header Section with Navigation Menu -->
+  <header>
+    <nav>
+      <ul id="large-nav-ul">
+        <li><a id="logo" href="index.html">UV Sense</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Product Overview</a></li>
+        <li><a href="education.html">Educational Resources</a></li>
+        <li><a href="waitlist.html">Waitlist</a></li>
+      </ul>
+
+
+      <!-- small screen nav -->
+      <div>
+        <a id="small-logo" href="index.html">UV Sense</a>
+      </div>
+
+      <div id="small-screen-nav-div" class="">
+        <button id="nav-button" onclick="toggleNav()" type="button">
+          <svg width="24" height="24" fill="none" aria-hidden="true">
+            <path
+              d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <!-- pop up -->
+        <div id="nav-popup" class="hidden">
+          <button onclick="toggleNav()" type="button">
+            <svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible" aria-hidden="true">
+              <path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              </path>
+            </svg>
+          </button>
+          <ul id="small-nav-ul" class="space-y-6">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Learn About UV</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="waitlist.html">Waitlist</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blur-div" class="hidden"></div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+
+    <!-- Waitlist Signup Form Section -->
+    <section>
+      <h1>Be the First to Get UV Sense!</h1>
+      <p>Join the waitlist to be the first to know when UV Sense is available. Enter your email below to receive
+        updates, exclusive offers, and news about our launch.</p>
+      <div class="flex-col-container">
+        <h3>Join the Waitlist</h3>
+        <form action="#">
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+          <button class="primary" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Support section -->
+    <section>
+      <h1>Support Our Mission</h1>
+      <p>UV Sense is on a mission to promote health and safety through innovative technology, and we need your help to
+        make it happen. By supporting our project, you’re helping us bring this life-changing product to the market and
+        make a real difference in people’s lives.</p>
+    </section>
+
+    <!-- Fund section -->
+    <section>
+      <h1>How You Can Help</h1>
+      <ul>
+        <li>
+          <p><strong>Fund Our Project:</strong> Every contribution helps us get closer to production. You can choose to
+            donate any amount to support our development and outreach efforts.</p>
+        </li>
+        <li>
+          <p><strong>Share Our Story:</strong> Spread the word about UV Sense on social media and with friends and
+            family to help us reach more people.</p>
+        </li>
+      </ul>
+
+      <!-- Funding Options -->
+      <div class="flex-col-container">
+        <h3>Choose Your Contribution:</h3>
+        <form action="#">
+          <label for="donation">Select an amount:</label>
+          <select id="donation" name="donation">
+            <option value="10">$10</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="100">$100</option>
+            <option value="other">Other</option>
+          </select>
+          <button class="primary" type="submit">Contribute Now</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 UV Sense. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
