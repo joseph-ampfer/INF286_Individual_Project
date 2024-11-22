@@ -1,97 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UV Sense - Product Overview</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UV Sense - Product Overview</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/print.css" rel="stylesheet" media="print" />
+  <script src="js/main.js"></script>
 </head>
+
 <body>
 
-    <!-- Header Section with Navigation Menu -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="product.html">Product Overview</a></li>     
-                <li><a href="education.html">Educational Resources</a></li>
-                <li><a href="waitlist.html">Waitlist</a></li>  
-            </ul>
-        </nav>
-    </header>
+  <!-- Header Section with Navigation Menu -->
+  <header>
+    <nav>
+      <ul id="large-nav-ul">
+        <li><a id="logo" href="index.html">UV Sense</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="current-nav" href="product.html">Product Overview</a></li>
+        <li><a href="education.html">Educational Resources</a></li>
+        <li><a href="waitlist.html">Waitlist</a></li>
+      </ul>
 
-    <!-- Main Content Area -->
-    <main>
-        <h1>Product Overview: UV Sense Device</h1>
-		<img src="images/quarter.jpg" width="50%" />
-        <p>Discover how UV Sense can help you stay safe under the sun with its cutting-edge design and advanced UV monitoring features.</p>
 
-        <!-- Product Description Section -->
-        <section>
-            <h2>Product Description</h2>
-            <p>The UV Sense device is a small, portable UV monitoring tool designed to be easily integrated into your everyday life. With its sleek design and compact size, UV Sense can be attached to your phone, keychain, or bag, ensuring you always have it with you when you need it.</p>
-            <p><strong>Use Cases:</strong></p>
-            <ul>
-                <li><strong>On Your Phone:</strong> Attach UV Sense to the back of your phone to track UV exposure throughout the day.</li>
-                <li><strong>On Your Keychain:</strong> Easily clip UV Sense onto your keys for a portable sun safety solution.</li>
-                <li><strong>On Your Bag:</strong> UV Sense fits perfectly on a bag or backpack, making it ideal for outdoor activities like hiking or sports.</li>
-            </ul>
-        </section>
+      <!-- small screen nav -->
+      <div>
+        <a id="small-logo" href="index.html">UV Sense</a>
+      </div>
 
-        <!-- Product Features Section -->
-        <section>
-            <h2>Product Features</h2>
-            <p>UV Sense is equipped with advanced features to help you monitor and manage your sun exposure effectively. Some of the key features include:</p>
-            <ul>
-                <li><strong>Accurate UV Readings:</strong> The built-in UV sensor provides real-time, precise measurements of UV radiation, ensuring you always have up-to-date information about the sun’s intensity.</li>
-                <li><strong>Personalized Sun Safety Recommendations:</strong> The UV Sense app offers customized tips and alerts based on your skin type, exposure history, and local UV conditions.</li>
-                <li><strong>Weather Integration:</strong> UV Sense connects with weather data to provide you with daily UV forecasts, so you can plan your outdoor activities safely.</li>
-                <li><strong>Historical Tracking:</strong> Monitor your long-term sun exposure trends to better understand your skin’s health and make informed decisions.</li>
-                <li><strong>Portable and Durable Design:</strong> UV Sense is water-resistant and built to withstand daily use, making it an ideal companion for all your outdoor activities.</li>
-            </ul>
-        </section>
+      <div id="small-screen-nav-div" class="">
+        <button id="nav-button" onclick="toggleNav()" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path  d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+        </button>
+        <!-- pop up -->
+        <div id="nav-popup" class="hidden">
+          <button onclick="toggleNav()" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
+          </button>
+          <ul id="small-nav-ul" class="space-y-6">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a class="current-nav" href="product.html">Product Overview</a></li>
+            <li><a href="education.html">Educational Resources</a></li>
+            <li><a href="waitlist.html">Waitlist</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blur-div" class="hidden"></div>
+    </nav>
+  </header>
 
-        <!-- Technical Specifications Section -->
-        <section>
-            <h2>Technical Specifications</h2>
-            <p>UV Sense combines advanced sensor technology with a compact form factor to deliver powerful UV monitoring in a portable device.</p>
-            <table border="1">
-                <tr>
-                    <th>Specification</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td><strong>Size</strong></td>
-                    <td>0.5 inches (12.7 mm) in diameter</td>
-                </tr>
-                <tr>
-                    <td><strong>Weight</strong></td>
-                    <td>0.2 oz (5 grams)</td>
-                </tr>
-                <tr>
-                    <td><strong>Battery Life</strong></td>
-                    <td>Up to 6 months with standard usage</td>
-                </tr>
-                <tr>
-                    <td><strong>Sensor Type</strong></td>
-                    <td>Advanced UV sensor with real-time monitoring capabilities</td>
-                </tr>
-                <tr>
-                    <td><strong>Compatibility</strong></td>
-                    <td>iOS and Android (via Bluetooth connection)</td>
-                </tr>
-                <tr>
-                    <td><strong>Water Resistance</strong></td>
-                    <td>IPX7 - Resistant to splashes and rain</td>
-                </tr>
-            </table>
-        </section>
-    </main>
+  <!-- Main Content Area -->
+  <main>
+    <div class="flex-col mb-3rem">
+      <h1>Compact Accuracy</h1>
+        <div class="caption">The UV Sense device is a small, portable UV monitoring tool designed to be easily integrated into your everyday
+        life. With its sleek design and compact size, UV Sense can be attached to your phone, keychain, or bag, ensuring
+        you always have it with you when you need it.</div>
+      <img id="compactAccuracy" src="images/uv and quarter.png" width="50%"  />
+    </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 UV Sense. All rights reserved.</p>
-    </footer>
+    <div class="flex-col mb-3rem">
+      <h1>Use Wherever, Whenever</h1>
+      <div class="caption">The UV Sense device is a small, portable UV monitoring tool designed to be easily integrated into your everyday life. With its sleek design and compact size, UV Sense can be attached to your phone, keychain, or bag, ensuring you always have it with you when you need it.</div>
+      <div class="holds-cards">
+        <div class="card-container ">
+          <img src="images/onPhone.webp"  />
+          <div>On Your Phone</div>
+        </div>
+        <div class="card-container">
+          <img src="images/onKeychain.webp" />
+          <div>On Your Keychain</div>
+        </div>
+        <div class="card-container">
+          <img src="images/onBackpack.webp"  />
+          <div>On Your Bag</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-col mb-3rem">
+      <h1>Feel Safe with Advanced Features</h1>
+      <div class="caption">UV Sense is equipped with advanced features to help you monitor and manage your sun exposure effectively. Some
+        of the key features include:</div>
+      <div class="holds-cards">
+        <div class="card-container ">
+          <div class="border-b">Accurate UV Readings:</div>
+          <div>The built-in UV sensor provides real-time, precise measurements of UV
+          radiation, ensuring you always have up-to-date information about the sun’s intensity.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Personalized Sun Safety Recommendations:</div>
+          <div>The UV Sense app offers customized tips and alerts
+          based on your skin type, exposure history, and local UV conditions.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Weather Integration:</div>
+          <div>UV Sense connects with weather data to provide you with daily UV
+          forecasts, so you can plan your outdoor activities safely.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Historical Tracking:</div>
+          <div>Monitor your long-term sun exposure trends to better understand your
+          skin’s health and make informed decisions.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Portable and Durable Design:</div>
+          <div>UV Sense is water-resistant and built to withstand daily use,
+          making it an ideal companion for all your outdoor activities.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-col mb-3rem">
+      <h1>Specs</h1>
+      <div class="caption">UV Sense combines advanced sensor technology with a compact form factor to deliver powerful UV monitoring in a
+        portable device.</div>
+      <div class="grid">
+        <div class="spec">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.045 18.508C2.682 17.145 2 16.463 2 15.616c0-.848.682-1.53 2.045-2.893l8.678-8.678C14.087 2.682 14.768 2 15.616 2s1.529.682 2.892 2.045l1.447 1.447C21.318 6.855 22 7.537 22 8.384s-.682 1.53-2.045 2.893l-8.678 8.678C9.913 21.318 9.23 22 8.384 22s-1.529-.682-2.892-2.045z"/><path stroke-linecap="round" d="M8.464 8.464L9.88 9.88m2.827-5.658l1.414 1.414m-9.899 7.071l1.414 1.414m.707-3.535l2.122 2.121m2.121-6.364l2.121 2.121"/></g></svg>
+          </div>
+          <div>12.7 mm Thick</div>
+        </div>
+        <div class="spec">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a4 4 0 0 1 4 4c0 .73-.19 1.41-.54 2H18c.95 0 1.75.67 1.95 1.56C21.96 18.57 22 18.78 22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2c0-.22.04-.43 2.05-8.44C4.25 9.67 5.05 9 6 9h2.54A3.9 3.9 0 0 1 8 7a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m-6 6v8h2v-2.5l1 1V19h2v-2l-2-2l2-2v-2H9v1.5l-1 1V11zm9 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h3v-5h-2v3h-1v-4h3v-2z"/></svg>
+          </div>
+          <div>5 grams</div>
+        </div>
+        <div class="spec">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path fill="currentColor" d="M5 10v6h11v-6zm5.83 4.908L9.62 13L7 13.428l3.223-2.324L11.398 13L14 12.57zM19 10c0-1.654-1.346-3-3-3H5c-1.654 0-3 1.346-3 3v6c0 1.654 1.346 3 3 3h11c1.654 0 3-1.346 3-3a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2m-2 6c0 .552-.449 1-1 1H5c-.551 0-1-.448-1-1v-6c0-.552.449-1 1-1h11c.551 0 1 .448 1 1z"/></svg>
+          </div>
+          <div>6 Month charge</div>
+        </div>
+        <div class="spec">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1.5m5 8.5a5 5 0 0 0-10 0M5.988 6.99l-1.06-1.061M22 13h-1.5m-17 0H2m17.07-7.071l-1.06 1.06M6.5 16v3c0 .943 0 1.414.293 1.707S7.557 21 8.5 21v0c.943 0 1.414 0 1.707-.293s.293-.764.293-1.707v-3m3 0l2 5l2-5" color="currentColor"/></svg>
+          </div>
+          <div>Advanced UV Sensor</div>
+        </div>
+        <div class="spec">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path fill="currentColor" d="M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"/></svg>
+          </div>
+          <div>iOS and Android</div>
+        </div>
+        <div class="spec">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512"><path fill="currentColor" d="M265.12 60.12a12 12 0 0 0-18.23 0C215.23 97.15 112 225.17 112 320c0 88.37 55.64 144 144 144s144-55.63 144-144c0-94.83-103.23-222.85-134.88-259.88M272 412a12 12 0 0 1-11.34-16a11.89 11.89 0 0 1 11.41-8A60.06 60.06 0 0 0 332 328.07a11.89 11.89 0 0 1 8-11.41A12 12 0 0 1 356 328a84.09 84.09 0 0 1-84 84"/></svg>
+          </div>
+          <div>Water Resistant IPX7</div>
+        </div>
+      </div>
+    </div>
+    <!-- <p>Discover how UV Sense can help you stay safe under the sun with its cutting-edge design and advanced UV
+      monitoring features.</p> -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 UV Sense. All rights reserved.</p>
+  </footer>
 
 </body>
+
 </html>

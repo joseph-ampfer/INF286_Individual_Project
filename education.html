@@ -1,88 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UV Sense - Educational Resources</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UV Sense - Educational Resources</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/print.css" rel="stylesheet" media="print" />
+  <script src="js/main.js"></script>
 </head>
+
 <body>
+  <!-- Header Section with Navigation Menu -->
+  <header>
+    <nav>
+      <ul id="large-nav-ul">
+        <li><a id="logo" href="index.html">UV Sense</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="product.html">Product Overview</a></li>
+        <li><a class="current-nav" href="education.html">Educational Resources</a></li>
+        <li><a href="waitlist.html">Waitlist</a></li>
+      </ul>
 
-    <!-- Header Section with Navigation Menu -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="product.html">Product Overview</a></li>     
-                <li><a href="education.html">Educational Resources</a></li>
-                <li><a href="waitlist.html">Waitlist</a></li>  
-            </ul>
-        </nav>
-    </header>
+      <!-- small screen nav -->
+      <div>
+        <a id="small-logo" href="index.html">UV Sense</a>
+      </div>
 
-    <!-- Main Content Area -->
-    <main>
-        <h1>Educational Resources: Understanding UV Safety</h1>
-        <p>Welcome to our educational hub. Here, you can learn about UV radiation, its impact on your health, and how to stay safe under the sun.</p>
+      <div id="small-screen-nav-div" class="">
+        <button id="nav-button" onclick="toggleNav()" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path  d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+        </button>
+        <!-- pop up -->
+        <div id="nav-popup" class="hidden">
+          <button onclick="toggleNav()" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
+          </button>
+          <ul id="small-nav-ul" class="space-y-6">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Product Overview</a></li>
+            <li><a class="current-nav" href="education.html">Educational Resources</a></li>
+            <li><a href="waitlist.html">Waitlist</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blur-div" class="hidden"></div>
+    </nav>
+  </header>
 
-        <!-- UV Radiation Explained Section -->
-        <section>
-            <h2>UV Radiation Explained</h2>
-            <p>Ultraviolet (UV) radiation is a type of energy produced by the sun and artificial sources like tanning beds. It is divided into three types based on wavelength:</p>
-            <ul>
-                <li><strong>UVA (320–400 nm):</strong> Long-wave UV rays that penetrate deep into the skin and contribute to aging and wrinkles.</li>
-                <li><strong>UVB (290–320 nm):</strong> Short-wave UV rays that are responsible for sunburn and play a key role in developing skin cancer.</li>
-                <li><strong>UVC (100–290 nm):</strong> The most dangerous type of UV radiation, but it is absorbed by the Earth’s atmosphere and does not reach the surface.</li>
-            </ul>
-            <p>Understanding these different types of UV rays and their effects can help you take better care of your skin and overall health.</p>
+  <!-- Main Content Area -->
+  <main>
 
-            <!-- Placeholder for Interactive Infographics -->
-            <div>
-                <p>Explore our visual guide to see how UV rays affect different layers of your skin.</p>
-                <img src="images/uva.jfif" width="50%" />
-            </div>
-        </section>
+    <div class="flex-col mb-3rem">
+      <h1>Why Care About UV?</h1>
+      <div class="holds-cards">
+        <div class="card-container ">
+          <img src="images/mole.jfif"  />
+          <div>Skin Cancer</div>
+        </div>
+        <div class="card-container">
+          <img src="images/truckerLady.jfif" />
+          <div>Wrinkles</div>
+        </div>
+        <div class="card-container">
+          <img src="images/agingTwins.jpg"  />
+          <div>Aging</div>
+        </div>
+      </div>
+    </div>
 
-         <!-- Understanding the UV Index Section -->
-        <section>
-            <h2>Understanding the UV Index</h2>
-            <p>The UV Index is a scale that measures the strength of sunburn-producing ultraviolet radiation at a particular place and time. It is a helpful tool for planning outdoor activities and understanding the level of risk.</p>
-            <h3>UV Index Levels and Safety Recommendations:</h3>
-            <ul>
-                <li><strong>0-2 (Low):</strong> Minimal risk. Safe to be outside, but consider sunscreen if you have sensitive skin.</li>
-                <li><strong>3-5 (Moderate):</strong> Moderate risk. Seek shade during midday hours and wear protective clothing.</li>
-                <li><strong>6-7 (High):</strong> High risk. Cover up, use sunscreen, and limit your time in the sun.</li>
-                <li><strong>8-10 (Very High):</strong> Very high risk. Take extra precautions—wear a wide-brimmed hat, sunglasses, and apply sunscreen frequently.</li>
-                <li><strong>11+ (Extreme):</strong> Extreme risk. Avoid being outside during midday. Full protection is essential (clothing, hats, sunscreen, and shade).</li>
-            </ul>
-            <img src="images/uvindex.jpg" width="50%" />
-            <p>By understanding the UV Index and planning your outdoor activities accordingly, you can reduce your risk of sunburn and long-term skin damage.</p>
-        </section>
+    <div class="flex-col mb-3rem">
+      <h1>UV Radiation Explained</h1>
+      <div class="caption">Ultraviolet (UV) radiation is a type of energy produced by the sun and artificial sources like tanning beds. It is divided into three types based on wavelength.</div>
+      <img src="images/uvABC.jpg" width="100%" />
+      <div class="holds-cards">
+        <div class="card-container ">
+          <div class="border-b">UVA</div>
+          <div>Long-wave UV rays that penetrate deep into the skin and contribute to
+            aging and wrinkles. (320–400 nm)</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">UVB</div>
+          <div>Short-wave UV rays that are responsible for sunburn and play a key role
+            in developing skin cancer.  (290–320 nm)</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">UVC</div>
+          <div>The most dangerous type of UV radiation, but it is absorbed by the
+            Earth’s atmosphere and does not reach the surface. (100–290 nm)</div>
+        </div>
+      </div>
+      <div class="caption">Understanding these different types of UV rays and their effects can help you take better care of your skin and overall health.</div>
+    </div>
 
-        <!-- Sun Safety Tips Section -->
-        <section>
-            <h2>Sun Safety Tips</h2>
-            <p>Protecting your skin from harmful UV exposure is essential for maintaining healthy skin. Follow these practical tips to stay safe under the sun:</p>
-            <ul>
-                <li><strong>Use Broad-Spectrum Sunscreen:</strong> Choose a broad-spectrum sunscreen with SPF 30 or higher and reapply every two hours.</li>
-                <li><strong>Wear Protective Clothing:</strong> Opt for long sleeves, wide-brimmed hats, and sunglasses to protect your skin and eyes.</li>
-                <li><strong>Stay in the Shade:</strong> Whenever possible, seek shade, especially between 10 a.m. and 4 p.m., when UV rays are strongest.</li>
-                <li><strong>Check the UV Index:</strong> Before heading outside, check the local UV Index to understand the level of risk and plan accordingly.</li>
-                <li><strong>Avoid Tanning Beds:</strong> Artificial sources of UV radiation can be just as harmful as the sun and significantly increase the risk of skin cancer.</li>
-            </ul>
-            <p>For more information on sun safety, check out these expert resources:</p>
-            <ul>
-                <li><a href="https://www.cancer.org/healthy/be-safe-in-sun.html" target="_blank">American Cancer Society: Be Safe in the Sun</a></li>
-                <li><a href="https://www.skincancer.org/risk-factors/uv-radiation/" target="_blank">Skin Cancer Foundation: UV Radiation</a></li>
-                <li><a href="https://www.who.int/health-topics/ultraviolet-radiation#tab=tab_1" target="_blank">World Health Organization: UV Radiation</a></li>
-            </ul>
-        </section>
-    </main>
+    <div class="flex-col mb-3rem">
+      <h1>UV Index Explained</h1>
+      <div class="caption">The UV Index is a scale that measures the strength of sunburn-producing ultraviolet radiation at a particular place and time. It is a helpful tool for planning outdoor activities and understanding the level of risk.</div>
+      <img src="images/uvindex.jpg" width="100%" />
+      <div class="holds-cards">
+        <ul>
+          <li><strong>0-2 (Low):</strong> Minimal risk. Safe to be outside, but consider sunscreen if you have sensitive
+            skin.</li>
+          <li><strong>3-5 (Moderate):</strong> Moderate risk. Seek shade during midday hours and wear protective clothing.
+          </li>
+          <li><strong>6-7 (High):</strong> High risk. Cover up, use sunscreen, and limit your time in the sun.</li>
+          <li><strong>8-10 (Very High):</strong> Very high risk. Take extra precautions—wear a wide-brimmed hat,
+            sunglasses, and apply sunscreen frequently.</li>
+          <li><strong>11+ (Extreme):</strong> Extreme risk. Avoid being outside during midday. Full protection is
+            essential (clothing, hats, sunscreen, and shade).</li>
+        </ul>
+      </div>
+      <div class="caption">By understanding the UV Index and planning your outdoor activities accordingly, you can reduce your risk of sunburn and long-term skin damage.</div>
+    </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 UV Sense. All rights reserved.</p>
-    </footer>
+    <div class="flex-col mb-3rem">
+      <h1>Sun Safety Tips</h1>
+      <div class="caption">Protecting your skin from harmful UV exposure is essential for maintaining healthy skin. Follow these practical tips to stay safe under the sun:</div>
+      <div class="holds-cards">
+        <div class="horizontal-card">
+          <div class="left-side" >
+            <h3>Tip 1</h3>
+            <div>Use Broad-Spectrum Sunscreen:</div>
+            <div>Choose a broad-spectrum sunscreen with SPF 30 or higher and
+            reapply every two hours.</div>
+          </div>
+          <div class="right-side">
+            <img class="" src="images/sunscreen.jfif" width="100%" />
+          </div>
+        </div>
+
+        <div class="horizontal-card">
+          <div class="left-side" >
+            <h3>Tip 2</h3>
+            <div>Wear Protective Clothing:</div>
+            <div>Opt for long sleeves, wide-brimmed hats, and sunglasses to
+            protect your skin and eyes.</div>
+          </div>
+          <div class="right-side">
+            <img class="" src="images/clothing.jfif" width="100%" />
+          </div>
+        </div>
+
+        <div class="horizontal-card">
+          <div class="left-side" >
+            <h3>Tip 3</h3>
+            <div>Stay in the Shade:</div>
+            <div>Whenever possible, seek shade, especially between 10 a.m. and 4 p.m.,
+            when UV rays are strongest.</div>
+          </div>
+          <div class="right-side">
+            <img class="" src="images/shade.jfif" width="100%" />
+          </div>
+        </div>
+
+        <div class="horizontal-card">
+          <div class="left-side" >
+            <h3>Tip 4</h3>
+            <div>Check the UV Index:</div>
+            <div>Before heading outside, check the local UV Index to understand the
+            level of risk and plan accordingly.</div>
+          </div>
+          <div class="right-side">
+            <img class="" src="images/uvIndexPhone.jfif" width="100%" />
+          </div>
+        </div>
+
+        <div class="horizontal-card">
+          <div class="left-side" >
+            <h3>Tip 4</h3>
+            <div>Avoid Tanning Beds:</div>
+            <div>Artificial sources of UV radiation can be just as harmful as the sun
+            and significantly increase the risk of skin cancer.</div>
+          </div>
+          <div class="right-side">
+            <img class="" src="images/tanningBed.jfif" width="100%" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info">
+      <div>
+        For more information on sun safety, check out these expert resources: 
+        <a href="https://www.cancer.org/healthy/be-safe-in-sun.html" target="_blank">American Cancer Society: Be
+            Safe in the Sun</a> |
+       <a href="https://www.skincancer.org/risk-factors/uv-radiation/" target="_blank">Skin Cancer Foundation: UV
+            Radiation</a> |
+       <a href="https://www.who.int/health-topics/ultraviolet-radiation#tab=tab_1" target="_blank">World Health
+            Organization: UV Radiation</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 UV Sense. All rights reserved.</p>
+  </footer>
 
 </body>
+
 </html>

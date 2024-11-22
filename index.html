@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UV Sense - Home</title>
   <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/print.css" rel="stylesheet" media="print" />
   <script src="js/main.js"></script>
 </head>
 
@@ -29,24 +30,18 @@
 
       <div id="small-screen-nav-div" class="">
         <button id="nav-button" onclick="toggleNav()" type="button">
-          <svg width="24" height="24" fill="none" aria-hidden="true">
-            <path
-              d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path  d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
         </button>
         <!-- pop up -->
         <div id="nav-popup" class="hidden">
           <button onclick="toggleNav()" type="button">
-            <svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible" aria-hidden="true">
-              <path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              </path>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
           </button>
           <ul id="small-nav-ul" class="space-y-6">
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Learn About UV</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a class="current-nav" href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Product Overview</a></li>
+            <li><a href="education.html">Educational Resources</a></li>
             <li><a href="waitlist.html">Waitlist</a></li>
           </ul>
         </div>
@@ -56,7 +51,7 @@
   </header>
 
   <!-- Main Content Area -->
-  <main>
+  <main >
     <!-- Big Picture and Title Section -->
     <section class="hero">
       <video class="absolute -z-10" width="100%" height="100%" autoplay loop muted playsinline>
@@ -65,96 +60,93 @@
       </video>
 
       <h1>Your Essential Companion for Healthy Skin and Sun Safety</h1>
-      <button class="primary main" href="product.html">Why UV Sense</button>
+      <button class="primary main" onclick="location.href='product.html'">Why UV Sense</button>
 
     </section>
 
     <section>
-      <p>
+      <h2>
         Accurate UV Monitoring. Personalized Recommendations. Stay Safe Under
         the Sun.
-      </p>
-      <p>
+      </h2>
+      <h3>
         UV Sense is a compact and portable UV monitoring device that
         seamlessly integrates with your daily routine. Attach it to your
         phone, keychain, or bag, and track your sun exposure in real-time with
         the UV Sense app.
-      </p>
+      </h3>
 
     </section>
 
     <!-- Features Overview Section -->
     <section>
-      <h2>Key Features</h2>
-      <div class="features">
-        <ul>
-          <li>
-            <strong>Real-Time UV Monitoring:</strong> Get instant updates on
-            your current UV exposure level, no matter where you are.
-          </li>
-          <li>
-            <strong>Personalized Alerts:</strong> Receive custom alerts and
-            recommendations based on your skin type and exposure history.
-          </li>
-          <li>
-            <strong>Portable and Durable Design:</strong> The UV Sense device is
-            compact, water-resistant, and built to withstand daily use.
-          </li>
-        </ul>
+      <h1>Key Features</h1>
+      <div class="holds-cards">
+        <div class="card-container ">
+          <div class="border-b">Real-Time UV Monitoring:</div>
+          <div>Get instant updates on your current UV exposure level, no matter where you are.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Personalized Alerts:</div>
+          <div>Receive custom alerts and recommendations based on your skin type and exposure history.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Portable and Durable Design:</div>
+          <div>The UV Sense device is compact, water-resistant, and built to withstand daily use.</div>
+        </div>
+
       </div>
     </section>
 
     <!-- How It Works Section -->
     <section>
-      <h2>How It Works</h2>
-      <div class="features">
-        <ol>
-          <li>
-            <strong>Attach the Device:</strong> Place the UV Sense device on
-            your phone or keychain.
-          </li>
-          <li>
-            <strong>Sync with the App:</strong> Connect UV Sense to the app via
-            Bluetooth to start tracking.
-          </li>
-          <li>
-            <strong>Stay Safe:</strong> Get real-time alerts and recommendations
-            when UV levels are high.
-          </li>
-        </ol>
+      <h1>How It Works</h1>
+      <div class="holds-cards">
+        <div class="card-container">
+          <div class="border-b">Attach the Device:</div>
+          <div>Place the UV Sense device on your phone or keychain.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Sync with the App:</div>
+          <div>Connect UV Sense to the app via Bluetooth to start tracking.</div>
+        </div>
+        <div class="card-container">
+          <div class="border-b">Stay Safe:</div>
+          <div>Get real-time alerts and recommendations when UV levels are high.</div>
+        </div>
       </div>
     </section>
 
     <!-- User Stories & Testimonials Section -->
     <section>
-      <h2>What Our Users Say</h2>
+      <h1>What Our Users Say</h1>
       <blockquote>
-        <em>
+        <h3><em>
           "I’m always worried about the wrinkles and damage that come with sun
           exposure. I want to do everything I can to keep my skin looking
           young and healthy. UV Sense gives me peace of mind by helping me
           track my UV exposure and reminding me to take extra precautions.
           It’s become a part of my daily skincare routine!"
-        </em>
-        <br />- Emma Smith, 24
+        </em></h3>
+        - Emma Smith, 24
       </blockquote>
       <blockquote>
-        <em>
+        <h3><em>
           "As a parent, UV Sense gives me peace of mind. I can easily track my
           children’s exposure and make sure they are protected."
-        </em>
+        </em></h3>
         <br />- Maria P.
       </blockquote>
     </section>
 
     <!-- Educational Resources Teaser -->
     <section>
-      <h2>Learn More About UV Safety</h2>
-      <p>
+      <h1>Learn More About UV Safety</h1>
+      <h3>
         Understanding UV radiation is essential for maintaining healthy skin.
         Explore our educational resources to learn more about the effects of
         UV rays and how to stay safe under the sun.
-      </p>
+      </h3>
       <a href="education.html">Read More About UV Safety</a>
     </section>
   </main>

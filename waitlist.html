@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UV Sense - Waitlist Signup & Fund Me</title>
   <link href="css/main.css" rel="stylesheet" type="text/css" />
-  <link href="css/waitlist.css" rel="stylesheet" type="text/css" />
+  <link href="css/print.css" rel="stylesheet" media="print" />
   <script src="js/main.js"></script>
 </head>
 
@@ -20,7 +20,7 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="product.html">Product Overview</a></li>
         <li><a href="education.html">Educational Resources</a></li>
-        <li><a href="waitlist.html">Waitlist</a></li>
+        <li><a class="current-nav" href="waitlist.html">Waitlist</a></li>
       </ul>
 
 
@@ -31,25 +31,19 @@
 
       <div id="small-screen-nav-div" class="">
         <button id="nav-button" onclick="toggleNav()" type="button">
-          <svg width="24" height="24" fill="none" aria-hidden="true">
-            <path
-              d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path  d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
         </button>
         <!-- pop up -->
         <div id="nav-popup" class="hidden">
           <button onclick="toggleNav()" type="button">
-            <svg viewBox="0 0 10 10" class="w-2.5 h-2.5 overflow-visible" aria-hidden="true">
-              <path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              </path>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path  d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/></svg>
           </button>
           <ul id="small-nav-ul" class="space-y-6">
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Learn About UV</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="waitlist.html">Waitlist</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Product Overview</a></li>
+            <li><a href="education.html">Educational Resources</a></li>
+            <li><a class="current-nav" href="waitlist.html">Waitlist</a></li>
           </ul>
         </div>
       </div>
@@ -58,13 +52,21 @@
   </header>
 
   <!-- Main Content Area -->
-  <main>
+  <main class="main-container">
+
+    <!-- Support section -->
+    <section>
+      <h1>Support Our Mission</h1>
+      <h3 class="lighter">UV Sense is on a mission to promote health and safety through innovative technology, and we need your help to
+        make it happen. By supporting our project, you’re helping us bring this life-changing product to the market and
+        make a real difference in people’s lives.</h3>
+    </section>
 
     <!-- Waitlist Signup Form Section -->
     <section>
       <h1>Be the First to Get UV Sense!</h1>
-      <p>Join the waitlist to be the first to know when UV Sense is available. Enter your email below to receive
-        updates, exclusive offers, and news about our launch.</p>
+      <h3 class="lighter">Join the waitlist to be the first to know when UV Sense is available. Enter your email below to receive
+        updates, exclusive offers, and news about our launch.</h3>
       <div class="flex-col-container">
         <h3>Join the Waitlist</h3>
         <form action="#">
@@ -75,25 +77,17 @@
       </div>
     </section>
 
-    <!-- Support section -->
-    <section>
-      <h1>Support Our Mission</h1>
-      <p>UV Sense is on a mission to promote health and safety through innovative technology, and we need your help to
-        make it happen. By supporting our project, you’re helping us bring this life-changing product to the market and
-        make a real difference in people’s lives.</p>
-    </section>
-
     <!-- Fund section -->
     <section>
       <h1>How You Can Help</h1>
       <ul>
         <li>
-          <p><strong>Fund Our Project:</strong> Every contribution helps us get closer to production. You can choose to
-            donate any amount to support our development and outreach efforts.</p>
+          <h3 class="lighter"><strong>Fund Our Project:</strong> Every contribution helps us get closer to production. You can choose to
+            donate any amount to support our development and outreach efforts.</h3>
         </li>
         <li>
-          <p><strong>Share Our Story:</strong> Spread the word about UV Sense on social media and with friends and
-            family to help us reach more people.</p>
+          <h3 class="lighter"><strong>Share Our Story:</strong> Spread the word about UV Sense on social media and with friends and
+            family to help us reach more people.</h3>
         </li>
       </ul>
 
